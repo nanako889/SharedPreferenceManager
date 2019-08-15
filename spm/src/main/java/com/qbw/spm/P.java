@@ -119,9 +119,14 @@ public class P {
 
     public static void putObject(String key, Object value) {
         try {
-            String json = sGson.toJson(value);
+            String json = "{}";
+            String className = "null";
+            if (value != null) {
+                json = sGson.toJson(value);
+                className = value.getClass().getName();
+            }
             sSharedPreferences.edit().putString(key, json).commit();
-            sXLog.d("key[%s], value[%s], class[%s]", key, json, value.getClass().getName());
+            sXLog.d("key[%s], value[%s], class[%s]", key, json, className);
         } catch (Exception e) {
             e.printStackTrace();
         }
