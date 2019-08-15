@@ -8,7 +8,7 @@
     }
     
     dependencies {
-        implementation 'com.github.qbaowei:SharedPreferenceManager:V1.0'
+        implementation 'com.github.qbaowei:SharedPreferenceManager:V1.1'
     }
     	
     	

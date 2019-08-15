@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.google.gson.Gson;
-import com.qbw.log.XLog;
+import com.qbw.log.L;
 
 import java.lang.reflect.Type;
 
@@ -18,7 +18,7 @@ public class P {
     private static Context sContext;
     private static SharedPreferences sSharedPreferences;
     private static Gson sGson;
-    private static XLog sXLog = new XLog();
+    private static L sXLog = new L();
 
     /**
      * call this method in Application's onCreate method
