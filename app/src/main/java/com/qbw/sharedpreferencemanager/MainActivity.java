@@ -23,14 +23,19 @@ public class MainActivity extends AppCompatActivity {
         user.setId(10000);
         user.setName("good");
         P.putObject("u", user);
+        User user1 = null;
+        P.putObject("u1", user1);
         User u = P.getObject("u", User.class);
+        User u1 = P.getObject("u1",User.class);
         StringBuilder sb = new StringBuilder();
         sb.append(P.getBoolean("b")).append("\n");
         sb.append(P.getFloat("f")).append("\n");
         sb.append(P.getInt("i")).append("\n");
         sb.append(P.getString("s")).append("\n");
         sb.append(P.getLong("l")).append("\n");
-        sb.append(u.getId()).append(" ").append(u.getName());
+        sb.append(u.getId()).append(" ").append(u.getName()).append("\n");
+        sb.append(u1==null?"u1==null":"u1 != null");
         tv.setText(sb);
+
     }
 }

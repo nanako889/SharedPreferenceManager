@@ -119,7 +119,7 @@ public class P {
 
     public static void putObject(String key, Object value) {
         try {
-            String json = "{}";
+            String json = "";
             String className = "null";
             if (value != null) {
                 json = sGson.toJson(value);
@@ -130,5 +130,9 @@ public class P {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    public static void remove(String key) {
+        sSharedPreferences.edit().remove(key).commit();
     }
 }

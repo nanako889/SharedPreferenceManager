@@ -1,14 +1,8 @@
+# SharedPreferenceManager
+    A SharedPreference library
 #download
-
-    allprojects {
-        repositories {
-        maven { 
-            url 'https://jitpack.io' }
-        }
-    }
-    
-    dependencies {
-        implementation 'com.github.qbaowei:SharedPreferenceManager:V1.1'
-    }
+    implementation 'top.qinbaowei:spm:1.4'
+# Author
+    qbaowei@foxmail.com
     	
     	
