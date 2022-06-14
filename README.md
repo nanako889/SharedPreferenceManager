@@ -1,6 +1,6 @@
 # SharedPreferenceManager
     A SharedPreference library
-#download
+# Download
     implementation 'top.qinbaowei:spm:1.4'
 # Author
     qbaowei@foxmail.com
